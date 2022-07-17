@@ -1,0 +1,2 @@
+https://nextui.org/docs/theme/default-theme
+https://github.com/chenglou/react-motion
