@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 import { NextUIProvider } from '@nextui-org/react';
+import Home from './components/Home';
 
-function App({Component}) {
+function App({ Component }) {
   return (
-    <NextUIProvider>
-      <Component />
-    </NextUIProvider>
+    <div>
+      <Home></Home>
+      {/* <NextUIProvider>
+        <Component />
+      </NextUIProvider> */}
+    </div>
   );
 }
 
