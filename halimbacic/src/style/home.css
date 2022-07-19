@@ -10,6 +10,6 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: grayscale(100%);
+    filter: grayscale(70%);
     height: 100vh;
 }

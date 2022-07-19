@@ -1,2 +1,7 @@
 https://nextui.org/docs/theme/default-theme
 https://github.com/chenglou/react-motion
+
+Red #9b1d20
+Blue Light #b5d6b2
+Blue Dark #222e50
+Orange Light #f4796b
