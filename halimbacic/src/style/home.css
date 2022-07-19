@@ -1,7 +1,15 @@
 body
 {
+    height:100vh;
+    margin:0;
+}
+
+.maincontainer
+{
     background-image: url('../resources/0P5A8181-70.jpg');
+    background-position: center;
     background-repeat: no-repeat;
-    height:100%;
-    background-size: 70%, 100%;
+    background-size: cover;
+    backdrop-filter: grayscale(100%);
+    height: 100vh;
 }
