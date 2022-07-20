@@ -2,6 +2,9 @@
 {
     background-color: rgba(181, 214, 178, .5);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .simpleButtonCss

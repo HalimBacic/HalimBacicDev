@@ -1,0 +1,16 @@
+.hugeSign
+{
+    font-size: 350%;
+}
+
+.smallSign
+{
+    font-size: 200%;
+}
+
+.sign
+{
+    font-family: 'Just Another Hand', cursive;
+    color: #FA1C37;
+    text-shadow: 1px 1px black;
+}

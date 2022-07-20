@@ -3,12 +3,12 @@ import '../style/home.css'
 import MainNavigation from './MainNavigation'
 
 
-
-
 function Home() {
   return (
-    <div className='maincontainer'>
+    <div>
+      <div className='maincontainer'>
         <MainNavigation></MainNavigation>
+      </div>
     </div>
   )
 }

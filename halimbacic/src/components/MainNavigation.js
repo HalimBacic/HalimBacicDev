@@ -1,6 +1,7 @@
 import React from 'react'
 import Stack from '@mui/material/Stack'
 import { Button } from '@mui/material'
+import Sign from './Sign'
 import '../style/navigation.css'
 
 const simpleButton = {
@@ -8,7 +9,6 @@ const simpleButton = {
       color: '#FA1C37',
       fontSize: '2rem',
       fontFamily: 'Ruda, sans-serif'
-
 }
 
 function MainNavigation() {
@@ -19,6 +19,7 @@ function MainNavigation() {
             <Button sx={simpleButton} className='simpleButtonCss'>Projects</Button>
             <Button sx={simpleButton} className='simpleButtonCss'>In progress</Button>
             <Button sx={simpleButton} className='simpleButtonCss'>Contacts</Button>
+            <Sign></Sign>
         </Stack>
     </div>
   )

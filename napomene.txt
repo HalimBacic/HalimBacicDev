@@ -8,3 +8,4 @@ Orange Light #f4796b
 
 font-family: 'Poppins', sans-serif;
 font-family: 'Ruda', sans-serif;
+font-family: 'Just Another Hand', cursive;
