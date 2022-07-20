@@ -1,0 +1,15 @@
+.mainClass
+{
+    background-color: rgba(181, 214, 178, .5);
+    background-size: cover;
+}
+
+.simpleButtonCss
+{
+    text-shadow: 1px 1px black;
+}
+
+.simpleButtonCss:hover
+{
+    text-shadow: 1px 1px white, 2px 2px white;
+}
