@@ -19,7 +19,7 @@ function MainNavigation() {
             <Button sx={simpleButton} className='simpleButtonCss'>Projects</Button>
             <Button sx={simpleButton} className='simpleButtonCss'>In progress</Button>
             <Button sx={simpleButton} className='simpleButtonCss'>Contacts</Button>
-            <Sign></Sign>
+            {/* <Sign></Sign> */}
         </Stack>
     </div>
   )
