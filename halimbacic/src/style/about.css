@@ -4,19 +4,38 @@
     margin:0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-image: url('../resources/0P5A8519-112.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.rightBox
+.leftSide
 {
-   
+    width:70%;
 }
 
-.leftBox
+.rightSide
 {
-    border-right: 3px solid #9b1d20;
+    width:27%;
+    background-color: transparent;
     background-color: rgba(181, 214, 178, .5);
+    background-size: cover;
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    margin: 0%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.simpleButtonCss
+{
+    text-shadow: 1px 1px black;
+    color: '#FA1C37';
+    font-size: '2rem';
+    font-family: 'Ruda, sans-serif';
+}
+
+.simpleButtonCss:hover
+{
+    text-shadow: 1px 1px white, 2px 2px white;
 }
