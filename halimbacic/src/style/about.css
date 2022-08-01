@@ -3,7 +3,7 @@
     height:100vh;
     margin:0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     background-image: url('../resources/0P5A8519-112.jpg');
     background-position: center;
@@ -11,19 +11,20 @@
     background-size: cover;
 }
 
-.leftSide
+.bottomPage
 {
     width:70%;
 }
 
-.rightSide
+.topPage
 {
-    width:27%;
+    height:100%;
+    width: 100%;
     background-color: transparent;
     background-color: rgba(181, 214, 178, .5);
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -34,7 +35,7 @@
 {
     text-shadow: 1px 1px black;
     color: '#FA1C37';
-    font-size: '2rem';
+    font-size: '1rem';
     font-family: 'Ruda, sans-serif';
 }
 
@@ -46,9 +47,9 @@
 .iconCustom
 {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: 2px 2px black;
-    color: #f4796b;
+    color: #FA1C37;
 }
 
 .iconCustom:hover
