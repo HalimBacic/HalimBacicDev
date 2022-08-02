@@ -2,8 +2,6 @@ import { Box, Stack } from '@mui/material'
 import React from 'react'
 import '../style/about.css'
 import { css, Button, Progress } from "@nextui-org/react";
-import { MdOutlineArrowDropUp } from 'react-icons/md'
-import { MdOutlineArrowDropDown } from 'react-icons/md'
 import { FaLaptopCode } from 'react-icons/fa'
 import { AiFillHome } from 'react-icons/ai'
 import { useState } from 'react'
@@ -58,7 +56,7 @@ function About() {
 
   return (
     <div className='aboutContainer'>
-      <div className='topPage'>
+      <div className='topPage'>  
         <Button light
           css={buttonStyleUp}
           icon={<AiFillHome className="iconCustom"></AiFillHome>}>
@@ -76,7 +74,8 @@ function About() {
         </Button>
       </div>
       <div className='bottomPage'>
-        {intro &&
+        {
+          intro &&
           <Box>
             I am Halim, software developer from Banja Luka.
             Let me to
