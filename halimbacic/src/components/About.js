@@ -6,6 +6,8 @@ import { FaLaptopCode } from 'react-icons/fa'
 import { AiFillHome } from 'react-icons/ai'
 import { useState } from 'react'
 
+import {Animated} from "react-animated-css";
+
 
 
 const buttonStyleUp = {
@@ -53,6 +55,7 @@ const simpleButton = {
 function About() {
 
   const [intro, setIntro] = useState(false);
+  const [animationStatus, setanimationStatus] = useState(false);
 
   return (
     <div className='aboutContainer'>
