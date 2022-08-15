@@ -1,0 +1,29 @@
+.biographyContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70vh;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 2%;
+    margin-top: 2vh;
+}
+
+.leftNavigation
+{
+    width:25%;
+    background-color: #293941;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:100vh;
+    align-items: center;
+}
+
+.rightBio
+{
+    background: linear-gradient(120deg, rgba(41,57,65,1) 48%, #d30505 100%);
+    height:100vh;
+    width:75%;
+}
