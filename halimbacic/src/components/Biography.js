@@ -42,7 +42,7 @@ function Biography() {
                 </Stack>
             </div>
             <div className='rightBio'>
-                <Container>
+                <Container className='bioContainer'>
                     <BiographySection name={"About me"} content={aboutMe}></BiographySection>
                 </Container>
             </div>
