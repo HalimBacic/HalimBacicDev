@@ -6,7 +6,14 @@ import { Button } from "@nextui-org/react";
 import { CardMedia, Divider } from '@mui/material';
 import BiographySection from './BiographySection';
 
-const aboutMe = "This is someting about me."
+const aboutMe = "Hello. My name is Halim Bačić. I am software developer and "+
+"software engineering student in Banja Luka. This is my portfolio where you can find some "+
+"informations about me. "
+
+const experience = "After some small projects and faculty projects, I joined Alea Partners. " + 
+"I was intern for 2 months. After that time, I got full-time job as backend engineer. "
+
+const skills = ""
 
 const navigationButtonCss =
 {
