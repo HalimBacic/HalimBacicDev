@@ -13,7 +13,8 @@ const aboutMe = "Hello. My name is Halim Bačić. I am software developer and "+
 const experience = "After some small projects and faculty projects, I joined Alea Partners. " + 
 "I was intern for 2 months. After that time, I got full-time job as backend engineer. "
 
-const skills = ""
+const skills = "In faculty, I learned Java and C# from object-oriented programming languages and some " +
+"Android programming. Also, I know C and C++. For database managment, I use MySql."
 
 const navigationButtonCss =
 {
@@ -51,6 +52,8 @@ function Biography() {
             <div className='rightBio'>
                 <Container className='bioContainer'>
                     <BiographySection name={"About me"} content={aboutMe}></BiographySection>
+                    <BiographySection name={"Experience"} content={experience}></BiographySection>
+                    <BiographySection name={"Skills"} content={skills}></BiographySection>
                 </Container>
             </div>
         </div>
