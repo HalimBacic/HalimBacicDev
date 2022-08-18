@@ -11,8 +11,8 @@ const textStyle =
 function BiographySection({name, content}) {
   return (
     <div className='sectionStyle'>
-        <Text size={40} extrabold css={textStyle}>{name}</Text>
-        <Text size={20} light css={textStyle}>{content}</Text>
+        <Text size={53} extrabold css={textStyle}>{name}</Text>
+        <Text size={32} light css={textStyle}>{content}</Text>
     </div>
   )
 }
