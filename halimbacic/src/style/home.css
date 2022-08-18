@@ -21,11 +21,11 @@ body
 .navigation
 {
     margin:2vh;
-    width: 5%;
+    height: 5%;
 }
 
 .about
 {
     margin-top: 40vh;
-    margin-left:5vh;
+    margin-left:-75vh;
 }

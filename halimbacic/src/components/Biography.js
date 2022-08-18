@@ -1,4 +1,4 @@
-import { Container, Image } from '@nextui-org/react'
+import { Container, Image} from '@nextui-org/react'
 import React from 'react'
 import '../style/biography.css'
 import Stack from '@mui/material/Stack';
@@ -52,7 +52,9 @@ function Biography() {
             <div className='rightBio'>
                 <Container className='bioContainer'>
                     <BiographySection name={"About me"} content={aboutMe}></BiographySection>
+                    <Divider orientation="horizontal" variant = "middle" sx={{backgroundColor:'#ffd333'}}></Divider>
                     <BiographySection name={"Experience"} content={experience}></BiographySection>
+                    <Divider orientation="horizontal" variant = "middle" sx={{backgroundColor:'#ffd333'}}></Divider>
                     <BiographySection name={"Skills"} content={skills}></BiographySection>
                 </Container>
             </div>
