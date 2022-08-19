@@ -5,13 +5,14 @@ import Stack from '@mui/material/Stack';
 import { Button } from "@nextui-org/react";
 import { CardMedia, Divider } from '@mui/material';
 import BiographySection from './BiographySection';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 const aboutMe = "Hello. My name is Halim Bačić. I am software developer and " +
     "software engineering student in Banja Luka. This is my portfolio where you can find some " +
     "informations about me. "
 
 const experience = "After some small projects and faculty projects, I joined Alea Partners. " +
-    "I was intern for 2 months. After that time, I got full-time job as backend engineer. I want learn more "+
+    "I was intern for 2 months. After that time, I got full-time job as backend engineer. I want learn more " +
     "and more, you can read about it on my blog section."
 
 const skills = "In faculty, I learned Java and C# from object-oriented programming languages and some " +
@@ -34,6 +35,11 @@ const navigationButtonCss =
     }
 }
 
+const scrollStyle =
+{
+    color: "yellow"
+}
+
 
 function Biography() {
     return (
@@ -53,13 +59,15 @@ function Biography() {
             </div>
             <div className='rightBio'>
                 <div className='scrollDiv'>
-                    <Container className='bioContainer'>
-                        <BiographySection name={"About me"} content={aboutMe}></BiographySection>
-                        <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
-                        <BiographySection name={"Experience"} content={experience}></BiographySection>
-                        <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
-                        <BiographySection name={"Skills"} content={skills}></BiographySection>
-                    </Container>
+                    <Scrollbars>
+                        <Container className='bioContainer' style={{ scrollStyle }}>
+                            <BiographySection name={"About me"} content={aboutMe}></BiographySection>
+                            <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
+                            <BiographySection name={"Experience"} content={experience}></BiographySection>
+                            <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
+                            <BiographySection name={"Skills"} content={skills}></BiographySection>
+                        </Container>
+                    </Scrollbars>
                 </div>
             </div>
         </div>
