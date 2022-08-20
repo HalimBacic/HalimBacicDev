@@ -6,6 +6,7 @@ import { Button } from "@nextui-org/react";
 import { CardMedia, Divider } from '@mui/material';
 import BiographySection from './BiographySection';
 import { Scrollbars } from 'react-custom-scrollbars';
+import EducationBiographySection from './EducationBiographySection';
 
 const aboutMe = "Hello. My name is Halim Bačić. I am software developer and " +
     "software engineering student in Banja Luka. This is my portfolio where you can find some " +
@@ -55,13 +56,18 @@ function Biography() {
                     <Button light size="sm" css={navigationButtonCss}>Education</Button>
                     <Button light size="sm" css={navigationButtonCss}>Experience</Button>
                     <Button light size="sm" css={navigationButtonCss}>Skills</Button>
+                    <Button light size="sm" css={navigationButtonCss}>Additional</Button>
                 </Stack>
             </div>
             <div className='rightBio'>
                 <div className='scrollDiv'>
-                    <Scrollbars>
+                    <Scrollbars
+                    renderTrackHorizontal={props => <div {...props} style={{display: 'none'}} className="track-horizontal"/>}
+                    >
                         <Container className='bioContainer' style={{ scrollStyle }}>
                             <BiographySection name={"About me"} content={aboutMe}></BiographySection>
+                            <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
+                            <EducationBiographySection></EducationBiographySection>
                             <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
                             <BiographySection name={"Experience"} content={experience}></BiographySection>
                             <Divider orientation="horizontal" variant="middle" sx={{ backgroundColor: '#ffd333' }}></Divider>
