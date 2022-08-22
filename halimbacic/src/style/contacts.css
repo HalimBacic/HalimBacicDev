@@ -1,0 +1,30 @@
+.contactsContainer {
+    height: 100vh;
+    background-color: #293941;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.imagesContacts
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:50%;
+}
+
+.cIcon
+{
+    font-size: 250%;
+    color: white;
+}
+
+.cIcon:hover
+{
+    cursor: pointer;
+    color:#ffd333;
+}
