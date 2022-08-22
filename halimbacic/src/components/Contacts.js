@@ -25,7 +25,15 @@ const contactsStyle =
     paddingBottom: '3vh',
 }
 
-
+const btnStyle = 
+{
+    color:'white',
+    '&:hover':
+    {
+        color:'#ffd333',
+        cursor:'pinter' 
+    }
+}
 
 function Contacts() {
 
@@ -39,19 +47,19 @@ function Contacts() {
                 Contacts
             </Text>
             <div className='imagesContacts'>
-                <IconButton>
+                <IconButton sx={btnStyle}>
                     <FacebookIcon className='cIcon'></FacebookIcon>
                 </IconButton>
-                <IconButton>
+                <IconButton sx={btnStyle}>
                     <InstagramIcon className='cIcon'></InstagramIcon>
                 </IconButton>
-                <IconButton>
+                <IconButton sx={btnStyle}>
                     <EmailIcon className='cIcon'></EmailIcon>
                 </IconButton>
-                <IconButton>
+                <IconButton sx={btnStyle}>
                     <LinkedInIcon className='cIcon'></LinkedInIcon>
                 </IconButton>
-                <IconButton>
+                <IconButton sx={btnStyle}>
                     <GitHubIcon className='cIcon'></GitHubIcon>
                 </IconButton>
             </div>
