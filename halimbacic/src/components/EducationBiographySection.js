@@ -56,7 +56,7 @@ const aleaintern = "In summer 2022, I was Alea Partners intern where I learned h
 function EducationBiographySection() {
     return (
         <div className='sectionStyle'>
-            <Text size={53} extrabold css={textStyle}>Education</Text>
+            <Text size={40} extrabold css={textStyle}>Education</Text>
             <Grid.Container gap={1} Justify="space-around" alignItems='center'>
                 <Grid xs={2} justify='center'>
                     <YearItem year={"2010 - 2014"}></YearItem>

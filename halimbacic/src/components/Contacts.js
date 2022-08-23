@@ -36,10 +36,20 @@ const btnStyle =
 }
 
 function Contacts() {
-
     const [link, setlink] = useState("");
-    const [contact, setcontact] = useState("");
+    const [contact, setcontact] = useState("Find me here");
 
+    const hoverEffect = (linkArg,textArg) => { 
+        console.log("Hover");
+        setlink(linkArg);
+        setcontact(textArg);
+    }
+
+    const mouseLeaveEffect = () => { 
+        console.log("Leave");
+        setlink(" ");
+        setcontact("Find me here");
+    }
 
     return (
         <div className='contactsContainer'>
@@ -47,24 +57,24 @@ function Contacts() {
                 Contacts
             </Text>
             <div className='imagesContacts'>
-                <IconButton sx={btnStyle}>
+                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(fblink, fbt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }} >
                     <FacebookIcon className='cIcon'></FacebookIcon>
                 </IconButton>
-                <IconButton sx={btnStyle}>
+                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(instlink, instt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <InstagramIcon className='cIcon'></InstagramIcon>
                 </IconButton>
-                <IconButton sx={btnStyle}>
+                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(gmail, mailt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <EmailIcon className='cIcon'></EmailIcon>
                 </IconButton>
-                <IconButton sx={btnStyle}>
+                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(linkedin, lnt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <LinkedInIcon className='cIcon'></LinkedInIcon>
                 </IconButton>
-                <IconButton sx={btnStyle}>
+                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(github, gtt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <GitHubIcon className='cIcon'></GitHubIcon>
                 </IconButton>
             </div>
-            <Text size={20} css={contactsStyle}>
-                { }
+            <Text size={17} css={contactsStyle}>
+                {contact}
             </Text>
             <div style={{ marginTop: '5%' }}>
                 <Stack orientation='row'>
