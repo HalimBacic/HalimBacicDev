@@ -1,5 +1,30 @@
+body
+{
+    height: 20vh;
+    background-color: #293941;
+    border-radius: 5%;
+    margin-top: 1vh;
+}
+
 .navigationAll
 {
     top: 5%;
     width:50%;
+}
+
+.navigation
+{
+    margin:2vh;
+    height: 5%;
+}
+
+.backdropDiv
+{
+    height: 60%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #ffd333 -20%, #FF5733 100%); /* Gradient background */
+    box-shadow: 5px 5px 10px rgba(148, 148, 148, 0.899); /* Shadow effect */
+    border-radius: 10px; /* Rounded corners */
 }

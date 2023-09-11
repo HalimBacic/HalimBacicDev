@@ -27,7 +27,7 @@ const textStyle =
 const YearItem = ({ year }) => {
 
     return (
-        <Text size={20} css={yearText}>
+        <Text size={17} css={yearText}>
             {year}
         </Text>
     )
@@ -36,7 +36,7 @@ const YearItem = ({ year }) => {
 
 const EducationForYear = ({ text }) => {
     return (
-        <Text size={23} css={myText}>
+        <Text size={20} css={myText}>
             {text}
         </Text>
     )

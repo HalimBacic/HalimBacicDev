@@ -6,13 +6,11 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-import { Icon, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 
 
 const fblink = "https://www.facebook.com/HalimBacic/"; const fbt = "Facebook";
 const instlink = "https://www.instagram.com/_halim______/"; const instt = "Instagram";
-const gmail = "bacich95@gmail.com"; const mailt = "Mail";
 const linkedin = "https://www.linkedin.com/in/halimbacic/"; const lnt = "LinkedIn";
 const github = "https://github.com/HalimBacic"; const gtt = "Github";
 
@@ -27,20 +25,27 @@ const contactsStyle =
 
 const btnStyle = 
 {
+    fontSize:'20px',
     color:'white',
     '&:hover':
     {
         color:'#ffd333',
-        cursor:'pinter' 
-    }
+        cursor:'pointer' 
+    },
+    '.MuiSvgIcon-root': {
+        fontSize: '40px', // Increase the font size for the icons
+      },
 }
 
 function Contacts() {
     const [link, setlink] = useState("");
     const [contact, setcontact] = useState("Find me here");
 
+    const openExternalLink = () => {
+        window.open(link, '_blank');
+      };
+
     const hoverEffect = (linkArg,textArg) => { 
-        console.log("Hover");
         setlink(linkArg);
         setcontact(textArg);
     }
@@ -57,19 +62,16 @@ function Contacts() {
                 Contacts
             </Text>
             <div className='imagesContacts'>
-                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(fblink, fbt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }} >
+                <IconButton sx={btnStyle} onClick={() => openExternalLink()} onMouseOver = { () =>{ hoverEffect(fblink, fbt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }} >
                     <FacebookIcon className='cIcon'></FacebookIcon>
                 </IconButton>
-                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(instlink, instt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
+                <IconButton sx={btnStyle} onClick={() => openExternalLink()} onMouseOver = { () =>{ hoverEffect(instlink, instt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <InstagramIcon className='cIcon'></InstagramIcon>
                 </IconButton>
-                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(gmail, mailt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
-                    <EmailIcon className='cIcon'></EmailIcon>
-                </IconButton>
-                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(linkedin, lnt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
+                <IconButton sx={btnStyle} onClick={() => openExternalLink()} onMouseOver = { () =>{ hoverEffect(linkedin, lnt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <LinkedInIcon className='cIcon'></LinkedInIcon>
                 </IconButton>
-                <IconButton sx={btnStyle} onMouseOver = { () =>{ hoverEffect(github, gtt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
+                <IconButton sx={btnStyle} onClick={() => openExternalLink()} onMouseOver = { () =>{ hoverEffect(github, gtt) }}  onMouseLeave={ () =>{ mouseLeaveEffect() }}>
                     <GitHubIcon className='cIcon'></GitHubIcon>
                 </IconButton>
             </div>

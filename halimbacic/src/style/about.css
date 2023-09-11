@@ -1,4 +1,9 @@
+body
+{
+    margin:0px;
+}
 .aboutContainer
 {
-    margin-left: 10%;
+    width:90%;
 }
+

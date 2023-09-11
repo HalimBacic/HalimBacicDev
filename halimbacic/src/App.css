@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.underconstruction
+{
+    display: none;
+}
+
+.floatBtn
+{
+  display: none;
+  position: fixed; /* Postavi fiksnu poziciju */
+  top: 90%; /* Postavi željeni položaj na dnu */
+  left: 2vh; /* Postavi željeni položaj s desne strane */
+  z-index: 999; /* Postavi redoslijed slojeva (iznad ostalih komponenata) */
+}
