@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d27db102.css",
-    "main.js": "/static/js/main.d2040b26.js",
-    "static/js/787.05f105b3.chunk.js": "/static/js/787.05f105b3.chunk.js",
-    "static/media/cvimg.jpg": "/static/media/cvimg.a199f7fe49acefb6e158.jpg",
-    "static/media/under.png": "/static/media/under.5d3d9d9ca189f2940d5b.png",
-    "index.html": "/index.html",
-    "main.d27db102.css.map": "/static/css/main.d27db102.css.map",
-    "main.d2040b26.js.map": "/static/js/main.d2040b26.js.map",
-    "787.05f105b3.chunk.js.map": "/static/js/787.05f105b3.chunk.js.map"
+    "main.css": "/HalimBacicDev/static/css/main.d27db102.css",
+    "main.js": "/HalimBacicDev/static/js/main.e9c81bdd.js",
+    "static/js/787.05f105b3.chunk.js": "/HalimBacicDev/static/js/787.05f105b3.chunk.js",
+    "static/media/cvimg.jpg": "/HalimBacicDev/static/media/cvimg.a199f7fe49acefb6e158.jpg",
+    "static/media/under.png": "/HalimBacicDev/static/media/under.5d3d9d9ca189f2940d5b.png",
+    "index.html": "/HalimBacicDev/index.html",
+    "main.d27db102.css.map": "/HalimBacicDev/static/css/main.d27db102.css.map",
+    "main.e9c81bdd.js.map": "/HalimBacicDev/static/js/main.e9c81bdd.js.map",
+    "787.05f105b3.chunk.js.map": "/HalimBacicDev/static/js/787.05f105b3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d27db102.css",
-    "static/js/main.d2040b26.js"
+    "static/js/main.e9c81bdd.js"
   ]
 }
