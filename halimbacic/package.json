@@ -1,7 +1,7 @@
 {
   "name": "halimbacic",
   "version": "0.1.0",
-  "homepage": "https://halimbacic.github.io/",
+  "homepage": "https://halimbacic.github.io/HalimBacicDev/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
