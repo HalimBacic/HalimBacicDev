@@ -68,7 +68,7 @@ function App({ Component }) {
       </div>
       {isMobile && (
         <Modal isOpen={true}>
-          <p>Ovo je dijalog za mobilne uređaje.</p>
+          <p>Mobile not support at the moment.</p>
         </Modal>
       )}
     </div>
